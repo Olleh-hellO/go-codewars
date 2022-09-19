@@ -21,7 +21,7 @@ func AbbrevName(name string) string {
 	lastName := names[1]
 
 	firstNameInit := strings.ToUpper(string(firstName[0:1]))
-	lastNameInit := string.ToUpper(string(lastName[0:1]))
+	lastNameInit := strings.ToUpper(string(lastName[0:1]))
 
 	return fmt.Sprintf("%s.%s", firstNameInit, lastNameInit)
 
