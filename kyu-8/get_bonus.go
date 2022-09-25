@@ -8,15 +8,13 @@ Return the total figure the individual will receive as a string prefixed with "�
 
 package kata
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func BonusTime(salary int, bonus bool) string {
-
 	if bonus {
-
-		return "£" + fmt.Sprint(salary*10)
+		salary = salary * 10
 	}
-
-	return "£" + fmt.Sprint(salary)
-
+	return fmt.Sprintf("£%d", salary) // Your code here
 }
